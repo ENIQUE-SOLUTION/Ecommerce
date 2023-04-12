@@ -1,0 +1,77 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "GetAllProducts",
+    "description" : "GetAllProducts service"
+  },
+  "host" : "localhost:1625",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/getallproducts" : {
+      "post" : {
+        "summary" : "postGetAllProducts",
+        "description" : "postGetAllProducts",
+        "operationId" : "post-getallproducts",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "type" : "string"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a Products to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/Products"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Products" : {
+      "type" : "object",
+      "properties" : {
+        "Product" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Product",
+            "uniqueItems" : false
+          }
+        }
+      }
+    },
+    "Product" : {
+      "type" : "object",
+      "required" : [ "PRODUCT_ID" ],
+      "properties" : {
+        "PRODUCT_ID" : {
+          "type" : "string"
+        },
+        "PRODUCT_NAME" : {
+          "type" : "string"
+        },
+        "BRAND_ID" : {
+          "type" : "string"
+        },
+        "CATEGORY_ID" : {
+          "type" : "string"
+        },
+        "MODEL_YEAR" : {
+          "type" : "string"
+        },
+        "LIST_PRICE" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

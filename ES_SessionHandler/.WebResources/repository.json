@@ -1,0 +1,13 @@
+{
+    "records": [],
+    "resources": [
+        {
+            "location": "Service Descriptors/es_sessionhandler.Login-Login.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/es_sessionhandler.Logout-Logout.json",
+            "type": "generated"
+        }
+    ]
+}

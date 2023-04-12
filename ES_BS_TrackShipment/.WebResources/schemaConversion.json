@@ -1,0 +1,13 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/ES_BS_TrackShipment/Service Descriptors/es_bs_trackshipment.TrackShipment-TrackShipment.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.eniquesolutions.com/TrackShipment"
+    },
+    {
+        "jsonSchemaLocation": "/ES_BS_TrackShipment/Service Descriptors/es_bs_trackshipment.TrackShipment-TrackShipment.json",
+        "conversionType": "linked",
+        "xsdSchemaLocation": "/ES_Common_Model_SH/Schemas/Staus.xsd",
+        "xsdSchemaTargetNamespace": "http://www.eniquesolutions.org/Staus"
+    }
+]}

@@ -1,0 +1,17 @@
+{
+    "records": [],
+    "resources": [
+        {
+            "location": "Service Descriptors/es_bs_productmanagement.ProductMnagement-ProductMnagement.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/es_bs_productmanagement.GetIndividualProduct-ProductMnagement.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/es_bs_productmanagement.GetAllProducts-GetAllProducts.json",
+            "type": "generated"
+        }
+    ]
+}

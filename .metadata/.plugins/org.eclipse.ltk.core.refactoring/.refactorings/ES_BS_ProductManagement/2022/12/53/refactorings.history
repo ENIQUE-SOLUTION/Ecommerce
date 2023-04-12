@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ES_BS_ProductManagement/Processes/es_bs_productmanagement/ProductMnagement.bwp&apos; to &apos;GetIndividualProduct.bwp&apos;" description="Rename resource &apos;ProductMnagement.bwp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Processes/es_bs_productmanagement/ProductMnagement.bwp" name="GetIndividualProduct.bwp" stamp="1672212518529" updateReferences="true"/>
+</session>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_0drngIXBEe24UorJIFDgSw" targetNamespace="http://tns.tibco.com/bw/composite/ES_SessionHandler" name="ES_SessionHandler" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_NM6IEIXHEe24UorJIFDgSw" name="login" promote="ComponentLogin/login">
+    <sca:interface.wsdl xmi:id="_NNHjcIXHEe24UorJIFDgSw" interface="http://xmlns.example.com/20221227144654PLT#wsdl.interface(login)" scaext:wsdlLocation="../Processes/es_sessionhandler/Login.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_NNiaMIXHEe24UorJIFDgSw" name="RestService" path="/login" docBasePath="http://localhost:7777/ES_SessionHandler" docResourcePath="Login" basePath="/" connector="es_common_model_sh.HTTPConnectorResource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/es_sessionhandler.Login-Login.json">
+      <operation xmi:id="_NOFz0IXHEe24UorJIFDgSw" operationName="post" nickname="post-login" httpMethod="POST" notes="postLogin" responseStyle="element" requestStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_NUQGMIXHEe24UorJIFDgSw"/>
+      <advancedConfig xmi:id="_NNsLMIXHEe24UorJIFDgSw" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_NOFz0YXHEe24UorJIFDgSw" bindingName="RestService"/>
+  </sca:service>
+  <sca:service xmi:id="_qtPMAK3gEe2yC6kujR_Q5Q" name="logout" promote="ComponentLogout/logout">
+    <sca:interface.wsdl xmi:id="_qtZkEK3gEe2yC6kujR_Q5Q" interface="http://xmlns.example.com/20230216152956PLT#wsdl.interface(logout)" scaext:wsdlLocation="../Processes/es_sessionhandler/Logout.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_quB2MK3gEe2yC6kujR_Q5Q" name="RestService1" path="/logout" docBasePath="http://localhost:7777/ES_SessionHandler" docResourcePath="Logout" basePath="/" connector="es_common_model_sh.HTTPConnectorResource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/es_sessionhandler.Logout-Logout.json">
+      <operation xmi:id="_quqIUK3gEe2yC6kujR_Q5Q" operationName="get" nickname="get-logout" httpMethod="GET" notes="getLogout" responseStyle="element" outputPartName="item">
+        <parameters xmi:id="_G3wrkK3iEe2yC6kujR_Q5Q">
+          <parameterMapping xmi:id="_G3wrka3iEe2yC6kujR_Q5Q" parameterName="CustomerID" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_Id6KAK3iEe2yC6kujR_Q5Q" parameterName="SessionID" parameterType="Query" dataType="string"/>
+        </parameters>
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_qvGNMK3gEe2yC6kujR_Q5Q"/>
+      <advancedConfig xmi:id="_quB2Ma3gEe2yC6kujR_Q5Q" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_quqIUa3gEe2yC6kujR_Q5Q" bindingName="RestService1"/>
+  </sca:service>
+  <sca:property xmi:id="_3lNZIIXBEe24UorJIFDgSw" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_3lftAIXBEe24UorJIFDgSw" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_3lo28IXBEe24UorJIFDgSw" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_3ltIYIXBEe24UorJIFDgSw" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_3lxZ0IXBEe24UorJIFDgSw" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_3l7x4IXBEe24UorJIFDgSw" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_3mCfkIXBEe24UorJIFDgSw" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_3mH_IIXBEe24UorJIFDgSw" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_3mLpgIXBEe24UorJIFDgSw" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_NMTEEIXHEe24UorJIFDgSw" name="ComponentLogin" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_NMTEEYXHEe24UorJIFDgSw" processName="es_sessionhandler.Login"/>
+    <sca:service xmi:id="_NMuh4IXHEe24UorJIFDgSw" name="login">
+      <sca:interface.wsdl xmi:id="_NM12oIXHEe24UorJIFDgSw" interface="http://xmlns.example.com/20221227144654PLT#wsdl.interface(login)" scaext:wsdlLocation="../Processes/es_sessionhandler/Login.bwp"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_ueq8UIXKEe24UorJIFDgSw" name="ComponentTimerProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_ueq8UYXKEe24UorJIFDgSw" processName="es_sessionhandler.TimerProcess"/>
+  </sca:component>
+  <sca:component xmi:id="_qtBJkK3gEe2yC6kujR_Q5Q" name="ComponentLogout" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_qtBwoK3gEe2yC6kujR_Q5Q" processName="es_sessionhandler.Logout"/>
+    <sca:service xmi:id="_qtHQMK3gEe2yC6kujR_Q5Q" name="logout">
+      <sca:interface.wsdl xmi:id="_qtJFYK3gEe2yC6kujR_Q5Q" interface="http://xmlns.example.com/20230216152956PLT#wsdl.interface(logout)" scaext:wsdlLocation="../Processes/es_sessionhandler/Logout.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

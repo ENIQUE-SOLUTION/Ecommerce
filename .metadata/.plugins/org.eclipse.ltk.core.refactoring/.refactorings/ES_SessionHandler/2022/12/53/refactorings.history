@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ES_SessionHandler/Processes/es_sessionhandler_SubProcess/CreayeSession.bwp&apos; to &apos;CreateSession.bwp&apos;" description="Rename resource &apos;CreayeSession.bwp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Processes/es_sessionhandler_SubProcess/CreayeSession.bwp" name="CreateSession.bwp" stamp="1672130404262" updateReferences="true"/>
+</session>

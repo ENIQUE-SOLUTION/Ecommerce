@@ -1,0 +1,62 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/ES_BS_UserOnBoarding/Service Descriptors/es_bs_useronboarding.CreateAccount-CreateAccount.json",
+        "conversionType": "linked",
+        "xsdSchemaLocation": "/ES_Common_Model_SH/Schemas/Customers.xsd",
+        "xsdSchemaTargetNamespace": "http://www.eniquesolutions.com/Customers"
+    },
+    {
+        "jsonSchemaLocation": "/ES_BS_UserOnBoarding/Service Descriptors/es_bs_useronboarding.CreateAccount-CreateAccount.json",
+        "conversionType": "linked",
+        "xsdSchemaLocation": "/ES_Common_Model_SH/Schemas/Staus.xsd",
+        "xsdSchemaTargetNamespace": "http://www.eniquesolutions.org/Staus"
+    },
+    {
+        "jsonSchemaLocation": "/ES_BS_UserOnBoarding/Service Descriptors/es_bs_useronboarding.CreateAccount-CreateAccount.json",
+        "conversionType": "linked",
+        "xsdSchemaLocation": "/ES_Common_Model_SH/Schemas/Customers.xsd",
+        "xsdSchemaTargetNamespace": "http://www.eniquesolutions.com/Customers"
+    },
+    {
+        "jsonSchemaLocation": "/ES_BS_UserOnBoarding/Service Descriptors/es_bs_useronboarding.CreateAccount-CreateAccount.json",
+        "conversionType": "linked",
+        "xsdSchemaLocation": "/ES_Common_Model_SH/Schemas/Customers.xsd",
+        "xsdSchemaTargetNamespace": "http://www.eniquesolutions.com/Customers"
+    },
+    {
+        "jsonSchemaLocation": "/ES_BS_UserOnBoarding/Service Descriptors/es_bs_useronboarding.UserOnBoarding-UserOnBoarding.json",
+        "conversionType": "linked",
+        "xsdSchemaLocation": "/ES_Common_Model_SH/Schemas/Customers.xsd",
+        "xsdSchemaTargetNamespace": "http://www.eniquesolutions.com/Customers"
+    },
+    {
+        "jsonSchemaLocation": "/ES_BS_UserOnBoarding/Service Descriptors/es_bs_useronboarding.UserOnBoarding-UserOnBoarding.json",
+        "conversionType": "linked",
+        "xsdSchemaLocation": "/ES_Common_Model_SH/Schemas/Staus.xsd",
+        "xsdSchemaTargetNamespace": "http://www.eniquesolutions.org/Staus"
+    },
+    {
+        "jsonSchemaLocation": "/ES_BS_UserOnBoarding/Service Descriptors/es_bs_useronboarding.UserOnBoarding-UserOnBoarding.json",
+        "conversionType": "linked",
+        "xsdSchemaLocation": "/ES_Common_Model_SH/Schemas/Customers.xsd",
+        "xsdSchemaTargetNamespace": "http://www.eniquesolutions.com/Customers"
+    },
+    {
+        "jsonSchemaLocation": "/ES_BS_UserOnBoarding/Service Descriptors/es_bs_useronboarding.UserOnBoarding-UserOnBoarding.json",
+        "conversionType": "linked",
+        "xsdSchemaLocation": "/ES_Common_Model_SH/Schemas/Customers.xsd",
+        "xsdSchemaTargetNamespace": "http://www.eniquesolutions.com/Customers"
+    },
+    {
+        "jsonSchemaLocation": "/ES_BS_UserOnBoarding/Service Descriptors/es_bs_useronboarding.UserOnBoarding-UserOnBoarding.json",
+        "conversionType": "linked",
+        "xsdSchemaLocation": "/ES_Common_Model_SH/Schemas/Customers.xsd",
+        "xsdSchemaTargetNamespace": "http://www.eniquesolutions.com/Customers"
+    },
+    {
+        "jsonSchemaLocation": "/ES_BS_UserOnBoarding/Service Descriptors/es_bs_useronboarding.UserOnBoarding-UserOnBoarding.json",
+        "conversionType": "linked",
+        "xsdSchemaLocation": "/ES_Common_Model_SH/Schemas/Staus.xsd",
+        "xsdSchemaTargetNamespace": "http://www.eniquesolutions.org/Staus"
+    }
+]}

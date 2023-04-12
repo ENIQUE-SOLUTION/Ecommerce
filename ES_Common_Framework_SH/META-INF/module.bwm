@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmi:id="_3dKosIXHEe24UorJIFDgSw" targetNamespace="http://tns.tibco.com/bw/composite/ES_Common_Framework_SH" name="ES_Common_Framework_SH" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_5K3goIXHEe24UorJIFDgSw" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_5K8ZIIXHEe24UorJIFDgSw" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_5K-1YIXHEe24UorJIFDgSw" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_5LB4sIXHEe24UorJIFDgSw" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_5LDt4IXHEe24UorJIFDgSw" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_5LFjEIXHEe24UorJIFDgSw" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_5LH_UIXHEe24UorJIFDgSw" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_5LLCoIXHEe24UorJIFDgSw" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_5LNe4IXHEe24UorJIFDgSw" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+</sca:composite>

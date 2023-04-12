@@ -1,0 +1,13 @@
+{
+    "records": [],
+    "resources": [
+        {
+            "location": "Service Descriptors/es_bs_useronboarding.CreateAccount-CreateAccount.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/es_bs_useronboarding.UserOnBoarding-UserOnBoarding.json",
+            "type": "generated"
+        }
+    ]
+}

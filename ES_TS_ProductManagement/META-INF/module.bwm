@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:Categories="http://www.eniquesolutions.org/Categories" xmlns:FileInput="http://www.eniquesolutions.com/FileInput" xmlns:ProductManagement="http://www.tibco.com/ProductManagement/" xmlns:Products="http://www.eniquesolutions.org/Products" xmlns:Staus="http://www.eniquesolutions.org/Staus" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:axis2="http://xsd.tns.tibco.com/bw/models/binding/soap/axis2" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_kw8gQIZuEe2FFoVpEGJ_pw" targetNamespace="http://tns.tibco.com/bw/composite/ES_TS_ProductManagement" name="ES_TS_ProductManagement" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_GAzy4IZ5Ee2FFoVpEGJ_pw" name="ProductManagement" promote="ComponentProcess/ProductManagement">
+    <sca:interface.wsdl xmi:id="_GBBOQIZ5Ee2FFoVpEGJ_pw" interface="http://www.tibco.com/ProductManagement/#wsdl.interface(ProductManagement)" scaext:wsdlLocation="../../ES_Common_Model_SH/Service%20Descriptors/ProductManagement.wsdl"/>
+    <scaext:binding xsi:type="axis2:SOAPServiceBinding" xmi:id="_lKY6AIZ5Ee2FFoVpEGJ_pw" name="SOAPServiceBinding" targetNamespace="http://www.tibco.com/c859d46844254e27b5a6c6cb0ad6f1c4/SOAPServiceBinding" portTypeQName="ProductManagement:ProductManagement" transportBindingType="JMS" attachmentStyle="SwA" modelVersion="1.2.0" portTypeWSDLLocation="platform:/resource/ES_Common_Model_SH/Service%20Descriptors/ProductManagement.wsdl">
+      <bindingType xmi:id="_lKu4QIZ5Ee2FFoVpEGJ_pw"/>
+      <inboundConfiguration xsi:type="axis2:JMSInboundTransportConfiguration" xmi:id="_6sUKYIZ5Ee2FFoVpEGJ_pw" jmsResource="es_common_model_sh.JMSConnection_TS" destination="test"/>
+      <operationConfiguration xmi:id="_lKwtcIZ5Ee2FFoVpEGJ_pw" operationName="AddProduct" action="AddProduct" actionNeeded="true">
+        <bindingType xmi:id="_lKwtcYZ5Ee2FFoVpEGJ_pw"/>
+        <messageConfiguration xmi:id="_lKwtcoZ5Ee2FFoVpEGJ_pw" messageQName="ProductManagement:AddProductRequest" wsdlLocation="platform:/resource/ES_Common_Model_SH/Service%20Descriptors/ProductManagement.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_lKwtc4Z5Ee2FFoVpEGJ_pw" partName="parameters" partElementName="FileInput:FileInput"/>
+        </messageConfiguration>
+        <messageConfiguration xmi:id="_lKwtdIZ5Ee2FFoVpEGJ_pw" messageQName="ProductManagement:AddProductResponse" messageDirection="OUTPUT" wsdlLocation="platform:/resource/ES_Common_Model_SH/Service%20Descriptors/ProductManagement.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_lKwtdYZ5Ee2FFoVpEGJ_pw" partName="parameters" partElementName="Staus:Status"/>
+        </messageConfiguration>
+        <context xmi:id="_lKzJsIZ5Ee2FFoVpEGJ_pw">
+          <inputMapping xmi:id="_lK0X0IZ5Ee2FFoVpEGJ_pw"/>
+          <outputMapping xmi:id="_lK0X0YZ5Ee2FFoVpEGJ_pw" direction="OUTPUT"/>
+        </context>
+      </operationConfiguration>
+      <operationConfiguration xmi:id="_lKxUgIZ5Ee2FFoVpEGJ_pw" operationName="DeleteProduct" action="DeleteProduct" actionNeeded="true">
+        <bindingType xmi:id="_lKxUgYZ5Ee2FFoVpEGJ_pw"/>
+        <messageConfiguration xmi:id="_lKxUgoZ5Ee2FFoVpEGJ_pw" messageQName="ProductManagement:DeleteProductRequest" wsdlLocation="platform:/resource/ES_Common_Model_SH/Service%20Descriptors/ProductManagement.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_lKxUg4Z5Ee2FFoVpEGJ_pw" partName="parameters" partElementName="FileInput:FileInput"/>
+        </messageConfiguration>
+        <messageConfiguration xmi:id="_lKxUhIZ5Ee2FFoVpEGJ_pw" messageQName="ProductManagement:DeleteProductResponse" messageDirection="OUTPUT" wsdlLocation="platform:/resource/ES_Common_Model_SH/Service%20Descriptors/ProductManagement.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_lKxUhYZ5Ee2FFoVpEGJ_pw" partName="parameters" partElementName="Staus:Status"/>
+        </messageConfiguration>
+        <context xmi:id="_lK0X0oZ5Ee2FFoVpEGJ_pw">
+          <inputMapping xmi:id="_lK0X04Z5Ee2FFoVpEGJ_pw"/>
+          <outputMapping xmi:id="_lK0X1IZ5Ee2FFoVpEGJ_pw" direction="OUTPUT"/>
+        </context>
+      </operationConfiguration>
+      <operationConfiguration xmi:id="_lKxUhoZ5Ee2FFoVpEGJ_pw" operationName="UpdateProduct" action="UpdateProduct" actionNeeded="true">
+        <bindingType xmi:id="_lKxUh4Z5Ee2FFoVpEGJ_pw"/>
+        <messageConfiguration xmi:id="_lKxUiIZ5Ee2FFoVpEGJ_pw" messageQName="ProductManagement:UpdateProductRequest" wsdlLocation="platform:/resource/ES_Common_Model_SH/Service%20Descriptors/ProductManagement.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_lKxUiYZ5Ee2FFoVpEGJ_pw" partName="parameters" partElementName="FileInput:FileInput"/>
+        </messageConfiguration>
+        <messageConfiguration xmi:id="_lKxUioZ5Ee2FFoVpEGJ_pw" messageQName="ProductManagement:UpdateProductResponse" messageDirection="OUTPUT" wsdlLocation="platform:/resource/ES_Common_Model_SH/Service%20Descriptors/ProductManagement.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_lKxUi4Z5Ee2FFoVpEGJ_pw" partName="parameters" partElementName="Staus:Status"/>
+        </messageConfiguration>
+        <context xmi:id="_lK0X1YZ5Ee2FFoVpEGJ_pw">
+          <inputMapping xmi:id="_lK0X1oZ5Ee2FFoVpEGJ_pw"/>
+          <outputMapping xmi:id="_lK0X14Z5Ee2FFoVpEGJ_pw" direction="OUTPUT"/>
+        </context>
+      </operationConfiguration>
+      <operationConfiguration xmi:id="_lKx7kIZ5Ee2FFoVpEGJ_pw" operationName="GetAllProducts" action="GetAllProducts" actionNeeded="true">
+        <bindingType xmi:id="_lKx7kYZ5Ee2FFoVpEGJ_pw"/>
+        <messageConfiguration xmi:id="_lKx7koZ5Ee2FFoVpEGJ_pw" messageQName="ProductManagement:GetAllProductsRequest" wsdlLocation="platform:/resource/ES_Common_Model_SH/Service%20Descriptors/ProductManagement.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_lKx7k4Z5Ee2FFoVpEGJ_pw" partName="parameters" partElementName="Staus:Status"/>
+        </messageConfiguration>
+        <messageConfiguration xmi:id="_lKx7lIZ5Ee2FFoVpEGJ_pw" messageQName="ProductManagement:GetAllProductsResponse" messageDirection="OUTPUT" wsdlLocation="platform:/resource/ES_Common_Model_SH/Service%20Descriptors/ProductManagement.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_lKx7lYZ5Ee2FFoVpEGJ_pw" partName="parameters" partElementName="Products:Products"/>
+        </messageConfiguration>
+        <context xmi:id="_lK0X2IZ5Ee2FFoVpEGJ_pw">
+          <inputMapping xmi:id="_lK0X2YZ5Ee2FFoVpEGJ_pw"/>
+          <outputMapping xmi:id="_lK0X2oZ5Ee2FFoVpEGJ_pw" direction="OUTPUT"/>
+        </context>
+      </operationConfiguration>
+      <operationConfiguration xmi:id="_lKx7loZ5Ee2FFoVpEGJ_pw" operationName="GetIndividualProducts" action="GetIndividualProducts" actionNeeded="true">
+        <bindingType xmi:id="_lKx7l4Z5Ee2FFoVpEGJ_pw"/>
+        <messageConfiguration xmi:id="_lKx7mIZ5Ee2FFoVpEGJ_pw" messageQName="ProductManagement:GetIndividualProductsRequest" wsdlLocation="platform:/resource/ES_Common_Model_SH/Service%20Descriptors/ProductManagement.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_lKx7mYZ5Ee2FFoVpEGJ_pw" partName="parameters" partElementName="Products:ProductID"/>
+        </messageConfiguration>
+        <messageConfiguration xmi:id="_lKx7moZ5Ee2FFoVpEGJ_pw" messageQName="ProductManagement:GetIndividualProductsResponse" messageDirection="OUTPUT" wsdlLocation="platform:/resource/ES_Common_Model_SH/Service%20Descriptors/ProductManagement.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_lKx7m4Z5Ee2FFoVpEGJ_pw" partName="parameters" partElementName="Products:Product"/>
+        </messageConfiguration>
+        <context xmi:id="_lK0X24Z5Ee2FFoVpEGJ_pw">
+          <inputMapping xmi:id="_lK0X3IZ5Ee2FFoVpEGJ_pw"/>
+          <outputMapping xmi:id="_lK0X3YZ5Ee2FFoVpEGJ_pw" direction="OUTPUT"/>
+        </context>
+      </operationConfiguration>
+      <operationConfiguration xmi:id="_lKyioIZ5Ee2FFoVpEGJ_pw" operationName="GetProductByCategory" action="GetProductByCategory" actionNeeded="true">
+        <bindingType xmi:id="_lKyioYZ5Ee2FFoVpEGJ_pw"/>
+        <messageConfiguration xmi:id="_lKyiooZ5Ee2FFoVpEGJ_pw" messageQName="ProductManagement:GetProductByCategoryRequest" wsdlLocation="platform:/resource/ES_Common_Model_SH/Service%20Descriptors/ProductManagement.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_lKyio4Z5Ee2FFoVpEGJ_pw" partName="parameters" partElementName="Categories:Category"/>
+        </messageConfiguration>
+        <messageConfiguration xmi:id="_lKyipIZ5Ee2FFoVpEGJ_pw" messageQName="ProductManagement:GetProductByCategoryResponse" messageDirection="OUTPUT" wsdlLocation="platform:/resource/ES_Common_Model_SH/Service%20Descriptors/ProductManagement.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_lKyipYZ5Ee2FFoVpEGJ_pw" partName="parameters" partElementName="Products:Products"/>
+        </messageConfiguration>
+        <context xmi:id="_lK0X3oZ5Ee2FFoVpEGJ_pw">
+          <inputMapping xmi:id="_lK0-4IZ5Ee2FFoVpEGJ_pw"/>
+          <outputMapping xmi:id="_lK0-4YZ5Ee2FFoVpEGJ_pw" direction="OUTPUT"/>
+        </context>
+      </operationConfiguration>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_lK0-4oZ5Ee2FFoVpEGJ_pw" bindingName="SOAPServiceBinding"/>
+  </sca:service>
+  <sca:property xmi:id="_mz52gIZuEe2FFoVpEGJ_pw" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_m0Y-sIZuEe2FFoVpEGJ_pw" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_m0pdYIZuEe2FFoVpEGJ_pw" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_m058EIZuEe2FFoVpEGJ_pw" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_m1LB0IZuEe2FFoVpEGJ_pw" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_m1bggIZuEe2FFoVpEGJ_pw" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_m1pi8IZuEe2FFoVpEGJ_pw" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_m12XQIZuEe2FFoVpEGJ_pw" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_m1-TEIZuEe2FFoVpEGJ_pw" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_mk4jEIZuEe2FFoVpEGJ_pw" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_mk4jEYZuEe2FFoVpEGJ_pw" processName="es_ts_productmanagement.ProductManagement"/>
+    <sca:service xmi:id="_GAqB4IZ5Ee2FFoVpEGJ_pw" name="ProductManagement">
+      <sca:interface.wsdl xmi:id="_GAseIIZ5Ee2FFoVpEGJ_pw" interface="http://www.tibco.com/ProductManagement/#wsdl.interface(ProductManagement)" scaext:wsdlLocation="../../ES_Common_Model_SH/Service%20Descriptors/ProductManagement.wsdl"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

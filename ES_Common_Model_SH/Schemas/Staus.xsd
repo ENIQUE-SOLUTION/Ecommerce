@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.eniquesolutions.org/Staus" xmlns:tns="http://www.eniquesolutions.org/Staus" elementFormDefault="qualified">
+
+    <complexType name="StatusType">
+    	<sequence>
+    		<element name="Status" type="string"></element>
+    	</sequence>
+    </complexType>
+
+    <element name="Status" type="tns:StatusType"></element>
+</schema>

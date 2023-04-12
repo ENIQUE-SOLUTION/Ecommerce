@@ -1,0 +1,87 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "TrackShipment",
+    "description" : "TrackShipment service"
+  },
+  "host" : "localhost:1625",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/trackshipment" : {
+      "get" : {
+        "summary" : "getTrackShipment",
+        "description" : "getTrackShipment",
+        "operationId" : "get-trackshipment",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "OrderID",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a Status to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/Status"
+            }
+          }
+        }
+      }
+    },
+    "/Updateshipment" : {
+      "get" : {
+        "summary" : "getTrackShipment",
+        "description" : "getTrackShipment",
+        "operationId" : "get-Updateshipment",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "Status",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : true
+        }, {
+          "name" : "OrderID",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a TrackShipmentRes to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/TrackShipmentRes"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Status" : {
+      "type" : "object",
+      "required" : [ "Status" ],
+      "properties" : {
+        "Status" : {
+          "type" : "string"
+        }
+      }
+    },
+    "TrackShipmentRes" : {
+      "type" : "object",
+      "required" : [ "ResponseType" ],
+      "properties" : {
+        "ResponseType" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

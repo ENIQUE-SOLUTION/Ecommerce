@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ES_TS_UserOnBoarding/Processes/es_ts_useronboarding/Process.bwp&apos; to &apos;UserOnBoarding.bwp&apos;" description="Rename resource &apos;Process.bwp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Processes/es_ts_useronboarding/Process.bwp" name="UserOnBoarding.bwp" stamp="1681297199650" updateReferences="true"/>
+</session>

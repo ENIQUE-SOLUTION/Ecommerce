@@ -1,0 +1,17 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/ES_SessionHandler/Service Descriptors/es_sessionhandler.Login-Login.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.eniquesolutions.org/LoginValidation"
+    },
+    {
+        "jsonSchemaLocation": "/ES_SessionHandler/Service Descriptors/es_sessionhandler.Login-Login.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.eniquesolutions.com/LoginResponse"
+    },
+    {
+        "jsonSchemaLocation": "/ES_SessionHandler/Service Descriptors/es_sessionhandler.Logout-Logout.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.eniquesolutions.org/Staus"
+    }
+]}
