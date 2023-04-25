@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_ZKcRUN0MEe2Yu5bRAZREcQ" targetNamespace="http://tns.tibco.com/bw/composite/ES_BS_Payments" name="ES_BS_Payments" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_fzBg4OKIEe24n-z_VIyuJw" name="payment" promote="ComponentPayment/payment">
+    <sca:interface.wsdl xmi:id="_fzL48OKIEe24n-z_VIyuJw" interface="http://xmlns.example.com/20230424154219PLT#wsdl.interface(payment)" scaext:wsdlLocation="../Processes/es_bs_payments/Payment.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_fz64wOKIEe24n-z_VIyuJw" name="RestService" path="/payment" docBasePath="http://localhost:7777/ES_BS_Payments" docResourcePath="Payment" basePath="/" connector="es_common_model_sh.HTTPConnectorResource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/es_bs_payments.Payment-Payment.json">
+      <operation xmi:id="_f0xNUOKIEe24n-z_VIyuJw" operationName="post" nickname="post-payment" httpMethod="POST" notes="postPayment" responseStyle="element" requestStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_f1-HMOKIEe24n-z_VIyuJw"/>
+      <advancedConfig xmi:id="_fz64weKIEe24n-z_VIyuJw" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_f0xNUeKIEe24n-z_VIyuJw" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_fi0vsN0MEe2Yu5bRAZREcQ" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_fjNKMN0MEe2Yu5bRAZREcQ" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_fjRboN0MEe2Yu5bRAZREcQ" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_fjVGAN0MEe2Yu5bRAZREcQ" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_fjZXcN0MEe2Yu5bRAZREcQ" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_fjbMoN0MEe2Yu5bRAZREcQ" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_fjeP8N0MEe2Yu5bRAZREcQ" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_fjhTQN0MEe2Yu5bRAZREcQ" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_fjlksN0MEe2Yu5bRAZREcQ" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_fyxpQOKIEe24n-z_VIyuJw" name="ComponentPayment" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_fyxpQeKIEe24n-z_VIyuJw" processName="es_bs_payments.Payment"/>
+    <sca:service xmi:id="_fy6zMOKIEe24n-z_VIyuJw" name="payment">
+      <sca:interface.wsdl xmi:id="_fy8oYOKIEe24n-z_VIyuJw" interface="http://xmlns.example.com/20230424154219PLT#wsdl.interface(payment)" scaext:wsdlLocation="../Processes/es_bs_payments/Payment.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>
